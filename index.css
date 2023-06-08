@@ -1,0 +1,423 @@
+/* Add custom styles for the registration form */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group .error-message {
+  color: red;
+}
+
+.form-group .success-message {
+  color: green;
+}
+
+.form-group button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.job-listing {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.job-listing h3 {
+  margin-top: 0;
+}
+
+.job-listing p {
+  margin: 10px 0;
+}
+
+.job-listing .apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#job-listings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.job-listing {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.job-listing h3 {
+  margin-top: 0;
+}
+
+.job-listing p {
+  margin: 10px 0;
+}
+
+
+.profile {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-body h3 {
+  margin-top: 20px;
+}
+
+.profile-body ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.portfolio-item {
+  margin-bottom: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  text-align: center;
+  font-size: 44px;
+}
+
+.navbar-nav .nav-link {
+  color: white;
+  text-align: right; /* Aligns the list items to the right */
+  margin-left: 20px; /* Add some spacing between the list items */
+  font-size: 20px;
+}
+
+.dropdown-menu .dropdown-item {
+  color: black;
+}
+
+.dropdown-divider {
+  margin: 5px 0;
+  border-top: 1px solid #ccc;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+}
+
+
+.filters {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+input[type="number"] {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#job-listings {
+  margin-top: 20px;
+}
+
+.job-listing {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.job-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.job-details {
+  margin-bottom: 5px;
+}
+
+
+#conversation-list {
+  width: 200px;
+  float: left;
+  height: calc(100vh - 100px);
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+#conversation {
+  margin-left: 220px;
+}
+
+#message-list {
+  height: calc(100vh - 200px);
+  border-bottom: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+#message-input {
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+#send-button {
+  padding: 5px 10px;
+}
+
+
+/* Custom styles go here */
+
+.container {
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  /* Styles for small devices (e.g., smartphones) */
+  .container {
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Styles for medium and larger devices (e.g., tablets and desktops) */
+  .container {
+    margin-top: 40px;
+  }
+}
+
+
+
+
+.sidebar {
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  flex: 1;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Add additional styles as needed */
+
+
+
+/* Assuming you have existing CSS styles for your website */
+
+.blog-section {
+  margin: 20px 0;
+}
+
+.blog-post {
+  margin-bottom: 20px;
+  
+}
+
+.blog-post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.blog-post .date {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+
+.table-of-contents {
+  /* Add your custom CSS styling here */
+  color: black;
+  background-color: #ccc;
+  font-size: 18px;
+}
+
+
+.container {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-color: black;
+}
+
+
+.body {
+  background-color: lightsteelblue;
+}
