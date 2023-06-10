@@ -1,8 +1,15 @@
-/* Add custom styles for the registration form */
+/* Add custom styles for the registration form, the circles*/
 .container {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 300px;
+  margin: auto;
   padding: 20px;
+  border-color: #888888;
+  border-radius: 10px;
+  background-color: lightgray; /* I added more styling below */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 100%;
 }
 
 
@@ -34,10 +41,9 @@
 
 .form-group button {
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4cafa2;
   color: white;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -67,30 +73,13 @@
   cursor: pointer;
 }
 
-.search-bar {
-  text-align: center;
-  margin-bottom: 20px;
-}
 
-#job-listings {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.job-listing {
+.featured-job-listing {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 20px;
 }
 
-.job-listing h3 {
-  margin-top: 0;
-}
-
-.job-listing p {
-  margin: 10px 0;
-}
 
 
 .profile {
@@ -129,97 +118,6 @@
   font-size: 44px;
 }
 
-.navbar-nav .nav-link {
-  color: white;
-  text-align: right; /* Aligns the list items to the right */
-  margin-left: 20px; /* Add some spacing between the list items */
-  font-size: 20px;
-}
-
-.dropdown-menu .dropdown-item {
-  color: black;
-}
-
-.dropdown-divider {
-  margin: 5px 0;
-  border-top: 1px solid #ccc;
-}
-
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-}
-
-button[type="submit"] {
-  padding: 10px 20px;
-}
-
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-  width: 100%;
-}
-
-button[type="submit"] {
-  padding: 10px 20px;
-}
-
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-textarea {
-  width: 100%;
-}
-
-button[type="submit"] {
-  padding: 10px 20px;
-}
-
-
-.filters {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-select,
-input[type="number"] {
-  margin-bottom: 10px;
-  width: 100%;
-}
 
 #job-listings {
   margin-top: 20px;
@@ -241,24 +139,6 @@ input[type="number"] {
 }
 
 
-#conversation-list {
-  width: 200px;
-  float: left;
-  height: calc(100vh - 100px);
-  border-right: 1px solid #ccc;
-  overflow-y: auto;
-}
-
-#conversation {
-  margin-left: 220px;
-}
-
-#message-list {
-  height: calc(100vh - 200px);
-  border-bottom: 1px solid #ccc;
-  overflow-y: auto;
-}
-
 #message-input {
   padding: 10px;
 }
@@ -275,10 +155,22 @@ textarea {
 }
 
 
-/* Custom styles go here */
-
 .container {
   margin-top: 20px;
+}
+
+
+/* css for different screen sizes */
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+  /* For example: */
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 10px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -294,8 +186,32 @@ textarea {
     margin-top: 40px;
   }
 }
+/* CSS for screens smaller than 600px */
+@media (max-width: 600px) {
+  /* Adjust styles for smaller screens */
+}
+
+/* CSS for screens between 601px and 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+  /* Adjust styles for medium-sized screens */
+}
+
+.header {
+  height: 60px;
+}
+
+.menu {
+  display: none;
+}
 
 
+.sidebar {
+  width: 250px;
+}
+
+.main-content {
+  margin-left: 270px;
+}
 
 
 .sidebar {
@@ -321,12 +237,8 @@ h2 {
   margin-top: 0;
 }
 
-/* Add additional styles as needed */
 
-
-
-/* Assuming you have existing CSS styles for your website */
-
+/* css for blog */
 .blog-section {
   margin: 20px 0;
 }
@@ -350,7 +262,6 @@ h2 {
 
 
 .table-of-contents {
-  /* Add your custom CSS styling here */
   color: black;
   background-color: #ccc;
   font-size: 18px;
@@ -361,6 +272,7 @@ h2 {
   width: 300px;
   margin: 0 auto;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 form {
@@ -410,14 +322,58 @@ p {
 }
 
 
+
 .card {
-  border: 1px solid #ccc;
+  flex: 1;
+  margin: 10px;
   padding: 10px;
-  background-color: #f9f9f9;
-  border-color: black;
+  background-color: #05a02400
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-body h2 {
+  margin-top: 0;
 }
 
 
 .body {
   background-color: lightsteelblue;
+} 
+
+.messaging-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.messages {
+  max-height: 300px;
+  overflow-y: scroll;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 5px;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
 }

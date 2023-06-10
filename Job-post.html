@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title>Job post</title>
+</head>
+
+<div class="container">
+  <h1>Job Posting Form</h1>
+  <form action="/submit-job" method="POST">
+    <div class="form-group">
+      <label for="jobTitle">Job Title:</label>
+      <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
+    </div>
+    <div class="form-group">
+      <label for="Name">Name:</label>
+      <input type="text" class="form-control" id="Name" name="Name" required>
+    </div>
+    <div class="form-group">
+      <label for="Email">Email:</label>
+      <input type="text" class="form-control" id="Email" name="Email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone number">Phone number:</label>
+      <input type="text" class="form-control" id="phone number" name="phone number">
+    </div>
+    <div class="form-group">
+      <label for="jobDescription">Job Description:</label>
+      <textarea class="form-control" id="jobDescription" name="jobDescription" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="requiredSkills">Required Skills:</label>
+      <input type="text" class="form-control" id="requiredSkills" name="requiredSkills" required>
+    </div>
+    <div class="form-group">
+      <label for="jobBudget">Budget:</label>
+      <input type="number" class="form-control" id="jobBudget" name="jobBudget" required>
+    </div>
+    <div class="form-group">
+      <label for="jobDeadline">Deadline:</label>
+      <input type="date" class="form-control" id="jobDeadline" name="jobDeadline" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -17,16 +17,16 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <img src="./images/logo.JPG" alt="image of the website logo" width="100px" height="100px">
       <a class="navbar-brand" href="#">JOBSEEKER FREELANCER WEBSITE</a>
-      <!-- Add navigation links here -->
-      <!-- For example, <ul class="navbar-nav ml-auto"><li class="nav-item"><a class="nav-link" href="#">Home</a></li></ul> -->
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">Find Jobs</a></li>
-          <li><a href="#">Post a Job</a></li>
-          <li><a href="#">Profile</a></li>
+          <li><a href="Job-search.html">Job search</a></li>
+          <li><a href="Job-post.html">Post a Job</a></li>
+          <li><a href="Profile.html">Profile</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#">Login</a></li>
+          <li><a href="Job-Application.html">Job Application</a></li>
+          <li><a href="Register-form.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
   </header>
@@ -38,8 +38,7 @@
       <div class="container">
         <h1 class="display-4"><strong>Welcome to our Jobseeker/Freelancer Platform</strong></h1>
         <p class="lead">Find the perfect job or hire talented freelancers</p>
-        <!-- Add a call-to-action button here -->
-        <!-- For example, <a href="#" class="btn btn-primary btn-lg">Get Started</a> -->
+        <!-- a call-to-action button here -->
         <a href="#contact" class="btn btn-primary btn-lg">Hire Now</a>
       </div>
     </section>
@@ -52,17 +51,15 @@
       <ol>
         <li><a href="#section1">Introduction</a></li>
         <li><a href="#section2">Skills</a></li>
-        <li><a href="#section3">Contact</a></li>
-        <li><a href="#section4">Featured Job listings</a></li>
-        <li><a href="#section5">User Stories</a></li>
-        <li><a href="#section6">Job Posting Form</a></li>
-        <li><a href="#section7">User Registration Form</a></li>
-        <li><a href="#section8">Job Application</a></li>
-        <li><a href="#section9">Job Search</a></li>
-        <li><a href="#section10">Messaging system</a></li>
-        <li><a href="#section11">Ratings and Reviews</a></li>
-        <li><a href="#section12">Advanced Search</a></li>
-        <li><a href="#section13">Blog</a></li>
+        <li><a href="#section3">Featured Job listings</a></li>
+        <li><a href="#section4">User Stories</a></li>
+        <li><a href="#section5">Job Posting Form</a></li>
+        <li><a href="#section6">User Registration Form</a></li>
+        <li><a href="#section7">Job Application</a></li>
+        <li><a href="#section8">Job Search</a></li>
+        <li><a href="#section9">Messaging system</a></li>
+        <li><a href="#section10">Ratings and Reviews</a></li>
+        <li><a href="#section11">Blog</a></li>
       </ol>
     </div>
     
@@ -82,261 +79,14 @@
           <button type="submit">Login</button>
         </div>
       </form>
-      <p>Don't have an account? <a href="register.html">Register</a></p>
+      <p>Don't have an account? <a href="Register-form.html">Register</a></p>
     </div>
 
 
-    <div class="container">
-      <form id="registerForm">
-        <h2>Registration</h2>
-        <div class="form-group">
-          <label for="first name">First Name:</label>
-          <input type="text" id="first name" name="first name" required>
-        </div>
-        <div class="form-group">
-          <label for="last name">Last Name:</label>
-          <input type="text" id="last name" name="last name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="text" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone number">Phone Number:</label>
-          <input type="number" id="phone number" name="phone number" required>
-        </div>
-        <div class="form-group">
-          <label for="location">Location:</label>
-          <input type="text" id="location" name="location" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="additional information">Additional information:</label>
-          <textarea id="additional information" name="additional information" rows="5"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="age">Age:</label>
-          <input type="number" id="age" name="age" required>
-        </div>
-        <div class="form-group">
-          <label for="education">Education:</label>
-          <input type="text" id="education" name="education" required>
-        </div>
-        <div class="form-group">
-          <label for="profession">profession:</label>
-          <input type="text" id="profession" name="profession" required>
-        </div>
-        <div class="form-group">
-          <label for="linkedin">Linkedin:</label>
-          <input type="text" id="linkedin" name="linkedin" required>
-        </div>
-        <div class="form-group">
-          <label for="twitter">Twitter:</label>
-          <input type="text" id="twitter" name="twitter" required>
-        </div>
-        <div class="form-group">
-          <label for="github">Github:</label>
-          <input type="text" id="github" name="github" required>
-        </div>
-        <div class="form-group">
-          <button type="submit">Register</button>
-        </div>
-      </form>
-      <p>Already have an account? <a href="index.html">Login</a></p>
-    </div>
-
-
-   <script>
-     // Function to handle form submission
-function handleSubmit(event, url) {
-  event.preventDefault(); // Prevent the default form submission
-
-  // Get the form data
-  const form = event.target;
-  const formData = new FormData(form);
-
-  // Send a POST request to the specified URL
-  fetch(url, {
-    method: 'POST',
-    body: formData
-  })
-    .then(response => {
-      if (response.ok) {
-        // Success response
-        // Redirect the user to the logged-in area or show a success message
-        window.location.href = '/logged-in.html'; // Replace with the appropriate URL
-      } else {
-        // Error response
-        // Show an appropriate error message
-        console.error('Error:', response.status);
-      }
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-}
-
-// Login form submission
-const loginForm = document.getElementById('loginForm');
-loginForm.addEventListener('submit', event => {
-  handleSubmit(event, '/login');
-});
-
-// Registration form submission
-const registerForm = document.getElementById('registerForm');
-registerForm.addEventListener('submit', event => {
-  handleSubmit(event, '/register');
-});
-    </script> 
-
-   <!-- <script>
-      const express = require('express');
-const session = require('express-session');
-const mysql = require('mysql');
-const bcrypt = require('bcrypt');
-const { body, validationResult } = require('express-validator');
-const flash = require('express-flash');
-
-const app = express();
-const port = 3000; // or any desired port number
-
-// Set up MySQL connection
-const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'your_mysql_username',
-  password: 'your_mysql_password',
-  database: 'your_database_name',
-});
-
-db.connect((err) => {
-  if (err) {
-    console.error('Error connecting to MySQL:', err);
-    return;
-  }
-  console.log('Connected to MySQL');
-});
-
-// Set up session middleware
-app.use(
-  session({
-    secret: 'your_secret_key',
-    resave: false,
-    saveUninitialized: true,
-  })
-);
-
-// Set up flash messages middleware
-app.use(flash());
-
-// Set up form input validation middleware
-app.use(express.urlencoded({ extended: false }));
-
-// Set up registration form validation rules
-const registrationValidationRules = [
-  body('username').notEmpty().withMessage('Username is required'),
-  body('password').notEmpty().withMessage('Password is required'),
-];
-
-// Registration route
-app.post('/register', registrationValidationRules, (req, res) => {
-  const errors = validationResult(req);
-
-  if (!errors.isEmpty()) {
-    // Validation errors occurred
-    const errorMessages = errors.array().map((error) => error.msg);
-    req.flash('error', errorMessages);
-    return res.redirect('/register.html');
-  }
-
-  const { username, password } = req.body;
-  const hashedPassword = bcrypt.hashSync(password, 10);
-
-  const user = {
-    username,
-    password: hashedPassword,
-  };
-
-  db.query('INSERT INTO users SET ?', user, (err, result) => {
-    if (err) {
-      console.error('Error registering user:', err);
-      req.flash('error', 'An error occurred during registration');
-      return res.redirect('/register.html');
-    }
-
-    req.flash('success', 'Registration successful. Please log in.');
-    res.redirect('/index.html');
-  });
-});
-
-// Set up login form validation rules
-const loginValidationRules = [
-  body('username').notEmpty().withMessage('Username is required'),
-  body('password').notEmpty().withMessage('Password is required'),
-];
-
-// Login route
-app.post('/login', loginValidationRules, (req, res) => {
-  const errors = validationResult(req);
-
-  if (!errors.isEmpty()) {
-    // Validation errors occurred
-    const errorMessages = errors.array().map((error) => error.msg);
-    req.flash('error', errorMessages);
-    return res.redirect('/index.html');
-  }
-
-  const { username, password } = req.body;
-
-  db.query('SELECT * FROM users WHERE username = ?', [username], (err, results) => {
-    if (err) {
-      console.error('Error retrieving user:', err);
-      req.flash('error', 'An error occurred during login');
-      return res.redirect('/index.html');
-    }
-
-    if (results.length === 0) {
-      req.flash('error', 'Invalid username or password');
-      return res.redirect('/index.html');
-    }
-
-    const user = results[0];
-    const isPasswordValid = bcrypt.compareSync(password, user.password);
-
-    if (!isPasswordValid) {
-      req.flash('error', 'Invalid username or password');
-      return res.redirect('/index.html');
-    }
-
-    req.session.user = user;
-    req.flash('success', 'Login successful');
-    res.redirect('/logged-in.html');
-  });
-});
-
-// Logged-in route
-app.get('/logged-in.html', (req, res) => {
-  if (!req.session.user) {
-    req.flash('error', 'You must be logged in to access this page');
-    return res.redirect('/index.html');
-  }
-
-  // The user is logged in, so render the logged-in page
-  res.sendFile('logged-in.html', { root: __dirname });
-});
-
-// Start the server
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
-    </script> -->
-
-
+    <div class="container"></div>
     <section id="section1">
       <h2>INTRODUCTION</h2>
-      <!-- Content of the introduction section goes here -->
+      <!-- Content of the introduction section -->
       <p>What truly drives me is my genuine passion for Front-end Development. I am constantly seeking ways to refine my craft and stay updated with the latest industry trends. This ensures that I provide my clients with the highest level of expertise and creativity in every project I undertake.</p>
 
         <p>My unique selling points includes attention to detail, strong communication skills, or ability to work under pressure. These qualities enable me to deliver outstanding work and establish lasting partnerships with my clients.</p>
@@ -387,16 +137,15 @@ app.listen(port, () => {
 
 
     <!-- Featured job listings section -->
-    <section class="py-5">
+    <section class="px-5">
       <div class="container">
-        <h2 class="text-centre mb-4">FEATURED JOB LISTINGS</h2>
-        <!-- Add your featured job listings here -->
-        <!-- For example, <div class="card"><div class="card-body">Job title, description, etc.</div></div> -->
+        <h2 class="text-left mb-4">FEATURED JOB LISTINGS</h2>
         <div id="featured-job-listings">
-          <!-- Add your featured job listings here -->
+  
 
-          <div class="card">
-            <div class="card-body">
+          <div class="row align-items-start"></div>
+          <!--<div class="card"> 
+            <div class="card-body"> -->
               <img src="./images/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg" alt="image of Front-end Development" width="200px" height="200px">
               <h3><strong>Front-end Developer</strong></h3>
               <p> <strong>Job Description:</strong> As a Front-End Developer, you will play a crucial role in creating and implementing the visual and interactive elements of websites and web applications. You will collaborate with designers and back-end developers to translate their designs and functional requirements into clean, user-friendly, and responsive user interfaces.</p><br>
@@ -429,14 +178,16 @@ app.listen(port, () => {
               <p>Salary: $X per hour</p>
               <p><i>Join our team as a Front-End Developer and contribute to creating visually appealing, interactive, and user-friendly web experiences that delight our users and drive our digital initiatives forward.</i></p>
               <!-- Additional details like benefits, work schedule, etc. can be added here -->
-              <a href="application-link">Apply Now</a>
+              <a href="Job-Application.html">Apply Now</a>
             </div>
           </div>
         
-          <!-- Add more job listings here -->
+          
 
-          <div class="card">
-          <div class="card-body">
+          <div class="container"></div>
+          <div class="row align-items-right"></div>
+          <!--<div class="card">
+          <div class="card-body"> -->
             <img src="./images/jo-szczepanska-5aiRb5f464A-unsplash.jpg" alt="image of a production Manager" width="200px" height="200px">
             <h3><strong>Product Manager</strong></h3>
             <p><strong>Job Description:</strong> As a Product Manager, you will be responsible for driving the development and success of a product or product line. You will collaborate with cross-functional teams, including engineers, designers, marketing professionals, and stakeholders, to define and execute the product vision, strategy, and roadmap. Your goal is to deliver innovative and customer-centric products that meet market needs and drive business growth.</p>
@@ -472,12 +223,16 @@ app.listen(port, () => {
             <p>Location: Worldwide</p>
             <p>Salary: $X per hour</p>
             <p><i>Join our team as a Product Manager and lead the development of innovative and successful products that have a real impact on our customers and business.</i></p>
-            <a href="application-link">Apply Now</a>
+            <a href="Job-Application.html">Apply Now</a>
             </div>
             </div>
 
-          <div class="card">
-          <div class="card-body">
+
+            <div class="container"></div>
+          <div class="row align-items-left"></div>
+          <div class="col"></div>
+          <!--<div class="card">
+          <div class="card-body"> -->
             <img src="./images/pexels-karolina-grabowska-7681318.jpg" alt="image of a writer" width="200px" height="200px">
             <h3><strong>Writer</strong></h3>
             <p><strong>Job Description:</strong> As a Writer, you will be responsible for creating engaging and high-quality written content for various mediums and purposes. You will use your creativity, research skills, and language proficiency to craft compelling narratives, informative articles, marketing materials, or any other form of written communication as required by the organization or client.</p>
@@ -510,12 +265,15 @@ app.listen(port, () => {
               <p>Location: Worldwide</p>
               <p>Salary: $X per hour</p>
               <p><i>Join our team as a Writer and utilize your writing skills to create captivating and impactful content that engages readers and meets the goals of our organization or clients.</i></p>
-              <a href="application-link">Apply Now</a>
+              <a href="Job-Application.html">Apply Now</a>
               </div>
             </div>
-        
-          <div class="card">
-            <div class="card-body">
+          
+            <div class="container"></div>
+          <div class="row align-items-centre"></div>
+          <div class="col"></div>
+          <!--<div class="card">
+            <div class="card-body"> -->
               <img src="./images/pexels-michael-burrows-7147670.jpg" alt="image of a UI/UX Designer" width="200px" height="200px">
               <h3><strong>UI/UX Designer</strong></h3>
               <p><strong>Job Description: </strong>As a UI/UX Designer, you will be responsible for creating visually appealing and intuitive user interfaces (UI) and delivering outstanding user experiences (UX) across digital platforms. You will collaborate with cross-functional teams, including product managers, developers, and stakeholders, to understand user needs and design solutions that enhance usability, accessibility, and overall user satisfaction.</p>
@@ -551,13 +309,15 @@ app.listen(port, () => {
               <p>Salary: </p>
               <p><i>Join our team as a UI/UX Designer and contribute to crafting compelling and delightful digital experiences that meet user needs and drive business objectives.</i></p>
               <!-- Additional details like benefits, work schedule, etc. can be added here -->
-              <a href="application-link">Apply Now</a>
+              <a href="Job-Application.html">Apply Now</a>
             </div>
           </div>
         
-
-      <div class="card">
-        <div class="card-body">
+          <div class="container"></div>
+          <div class="row align-items-end"></div>
+          <div class="col"></div>
+      <!--<div class="card">
+        <div class="card-body"> -->
           <img src="./images/pexels-christina-morillo-1181675.jpg" alt="image of Software Engineering" width="200px" height="200px">
           <h3><strong>Software Engineer</strong></h3>
           <p><strong>Job Description:</strong> As a Software Engineer, you will be responsible for designing, developing, and maintaining high-quality software solutions. You will collaborate with cross-functional teams, including product managers, designers, and other developers, to understand requirements, translate them into technical specifications, and deliver reliable and scalable software applications.</p>
@@ -590,7 +350,7 @@ app.listen(port, () => {
             <p>Location: countrywide</p>
             <p>Salary: $X per hour</p>
             <p><i>Join our team as a Software Engineer and contribute to building innovative software solutions that meet user needs and drive technological advancement.</i></p>
-            <a href="application-link">Apply Now</a>
+            <a href="Job-Application.html">Apply Now</a>
           </div>
         </div>
     </section>
@@ -599,8 +359,7 @@ app.listen(port, () => {
     <section class="py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-4">USER STORIES</h2>
-        <!-- Add your testimonials here -->
-        <!-- For example, <div class="card"><div class="card-body">Testimonial content, author, etc.</div></div> -->
+        
 
         <div class="card">
           <div class="card-body"></div>
@@ -643,386 +402,75 @@ app.listen(port, () => {
     </section>
   </main>
 
-  <div id="jobListings">
-    <!-- Job listings will be dynamically displayed here -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script> 
+
+
+
+  <div class="container"></div>
+  <div class="message-container">
+    <h2>Messaging System</h2>
+    <div class="message">
+      <span class="sender"></span>
+      <span class="timestamp"></span>
+      <p>Hello, how can I assist you?</p>
+    </div>
+    <div class="message">
+      <span class="sender"></span>
+      <span class="timestamp"></span>
+      <p>Please write your question below</p>
+    </div>
+    <!-- Add more messages dynamically using JavaScript -->
   </div>
-</div>
 
-<!-- Include Bootstrap JS and jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-<div class="container">
-  <h1>Job Posting Form</h1>
-  <form action="/submit-job" method="POST">
-    <div class="form-group">
-      <label for="jobTitle">Job Title:</label>
-      <input type="text" class="form-control" id="jobTitle" name="jobTitle" required>
-    </div>
-    <div class="form-group">
-      <label for="jobDescription">Job Description:</label>
-      <textarea class="form-control" id="jobDescription" name="jobDescription" rows="4" required></textarea>
-    </div>
-    <div class="form-group">
-      <label for="requiredSkills">Required Skills:</label>
-      <input type="text" class="form-control" id="requiredSkills" name="requiredSkills" required>
-    </div>
-    <div class="form-group">
-      <label for="jobBudget">Budget:</label>
-      <input type="number" class="form-control" id="jobBudget" name="jobBudget" required>
-    </div>
-    <div class="form-group">
-      <label for="jobDeadline">Deadline:</label>
-      <input type="date" class="form-control" id="jobDeadline" name="jobDeadline" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-</div>
-
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-  <div class="container">
-    <h2>User Registration Form</h2>
-    <form id="registration-form">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-      </div>
-      <div class="form-group">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" name="confirm-password" required>
-      </div>
-      <div class="form-group">
-        <button type="submit">Register</button>
-      </div>
-    </form>
+  <div class="message-form">
+    <textarea id="message-input" placeholder="Type your message here..."></textarea>
+    <button onclick="sendMessage()">Send</button>
   </div>
 
   <script>
-    document.getElementById('registration-form').addEventListener('submit', function(event) {
-      event.preventDefault();
+    // JavaScript code for sending messages
+    function sendMessage() {
+      var messageInput = document.getElementById('message-input');
+      var message = messageInput.value.trim();
 
-      // Perform client-side form validation here
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var password = document.getElementById('password').value;
-      var confirmPassword = document.getElementById('confirm-password').value;
+      if (message !== '') {
+        var messageContainer = document.querySelector('.message-container');
 
-      if (password !== confirmPassword) {
-        alert('Passwords do not match');
-        return;
+        // Create new message element
+        var newMessage = document.createElement('div');
+        newMessage.classList.add('message');
+        newMessage.innerHTML = `
+          <span class="sender">You</span>
+          <span class="timestamp">${getCurrentTimestamp()}</span>
+          <p>${message}</p>
+        `;
+
+        // Append the new message to the message container
+        messageContainer.appendChild(newMessage);
+
+        // Clear the input field
+        messageInput.value = '';
       }
+    }
 
-      // Proceed with form submission if validation passes
-      alert('Form submitted successfully!');
-      this.reset(); // Reset the form
-    });
+    // Function to get current timestamp
+    function getCurrentTimestamp() {
+      var now = new Date();
+      var timestamp = now.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
+      return timestamp;
+    }
   </script>
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Jobseeker/Freelancer</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="accountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
-        <div class="dropdown-menu" aria-labelledby="accountDropdown">
-          <a class="dropdown-item" href="#">Profile</a>
-          <a class="dropdown-item" href="#">Settings</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Logout</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Job Categories
-        </a>
-        <div class="dropdown-menu" aria-labelledby="categoriesDropdown">
-          <a class="dropdown-item" href="#">Web Development</a>
-          <a class="dropdown-item" href="#">Graphic Design</a>
-          <a class="dropdown-item" href="#">Writing</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Post a Job</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-<h1>Job Application</h1>
-  <form id="application-form">
-    <div class="form-group">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="resume">Resume</label>
-      <input type="file" id="resume" name="resume" required>
-    </div>
-    <div class="form-group">
-      <label for="cover-letter">Cover Letter</label>
-      <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
-    </div>
-    <button type="submit">Submit Application</button>
-  </form>
-
-  <script>
-    document.getElementById("application-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var resume = document.getElementById("resume").value;
-  var coverLetter = document.getElementById("cover-letter").value;
-
-  // Validate form fields
-  if (name === "" || email === "" || resume === "" || coverLetter === "") {
-    alert("Please fill in all fields.");
-    return;
-  }
-
-  // Simulate form submission (replace with actual implementation)
-  setTimeout(function() {
-    alert("Application submitted successfully!");
-    document.getElementById("application-form").reset();
-  }, 1000);
-});
-  </script>
-
-
-
-
-
-<h1>Job Posting Form</h1>
-  <form id="job-posting-form">
-    <div class="form-group">
-      <label for="job-title">Job Title</label>
-      <input type="text" id="job-title" name="job-title" required>
-    </div>
-    <div class="form-group">
-      <label for="job-description">Job Description</label>
-      <textarea id="job-description" name="job-description" rows="4" required></textarea>
-    </div>
-    <div class="form-group">
-      <label for="job-requirements">Job Requirements</label>
-      <textarea id="job-requirements" name="job-requirements" rows="4" required></textarea>
-    </div>
-    <div class="form-group">
-      <label for="contact-information">Contact Information</label>
-      <input type="text" id="contact-information" name="contact-information" required>
-    </div>
-    <button type="submit">Post Job</button>
-  </form>
-
-  <script>
-    document.getElementById("job-posting-form").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  var jobTitle = document.getElementById("job-title").value;
-  var jobDescription = document.getElementById("job-description").value;
-  var jobRequirements = document.getElementById("job-requirements").value;
-  var contactInformation = document.getElementById("contact-information").value;
-
-  // Validate form fields
-  if (jobTitle === "" || jobDescription === "" || jobRequirements === "" || contactInformation === "") {
-    alert("Please fill in all fields.");
-    return;
-  }
-
-  // Simulate job posting (replace with actual implementation to save the job posting)
-  setTimeout(function() {
-    alert("Job posted successfully!");
-    document.getElementById("job-posting-form").reset();
-  }, 1000);
-});
-  </script>
-
-<h1>Job Search</h1>
-
-<div class="filters">
-  <label for="location">Location:</label>
-  <input type="text" id="location" placeholder="Enter location">
-
-  <label for="job-type">Job Type:</label>
-  <select id="job-type">
-    <option value="">All</option>
-    <option value="Full-time">Full-time</option>
-    <option value="Part-time">Part-time</option>
-    <option value="Contract">Contract</option>
-  </select>
-
-  <label for="salary-range">Salary Range:</label>
-  <input type="number" id="salary-range" placeholder="Enter salary range">
-</div>
-
-<div id="job-listings">
-  <!-- Job listings will be dynamically populated here -->
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.min.js"></script>
-
-<script>
-  var jobListings = [
-  {
-    id: 1,
-    title: "Front-end Developer",
-    location: "New York",
-    type: "Full-time",
-    salary: 70000
-  },
-  {
-    id: 2,
-    title: "UI/UX Designer",
-    location: "San Francisco",
-    type: "Contract",
-    salary: 90000
-  },
-  {
-    id: 3,
-    title: "Software Engineer",
-    location: "London",
-    type: "Full-time",
-    salary: 80000
-  },
-  {
-    id: 4,
-    title: "Product Manager",
-    location: "Los Angeles",
-    type: "Part-time",
-    salary: 60000
-  },
-  // Add more job listings here
-];
-
-var options = {
-  keys: ["title", "location", "type"],
-  threshold: 0.3
-};
-
-var fuse = new Fuse(jobListings, options);
-
-function renderJobListings(jobListings) {
-  var jobListingsContainer = document.getElementById("job-listings");
-  jobListingsContainer.innerHTML = "";
-
-  if (jobListings.length === 0) {
-    jobListingsContainer.innerHTML = "<p>No job listings found.</p>";
-    return;
-  }
-
-  jobListings.forEach(function(jobListing) {
-    var jobListingElement = document.createElement("div");
-    jobListingElement.classList.add("job-listing");
-
-    var titleElement = document.createElement("div");
-    titleElement.classList.add("job-title");
-    titleElement.textContent = jobListing.title;
-
-    var detailsElement = document.createElement("div");
-    detailsElement.classList.add("job-details");
-    detailsElement.innerHTML =
-      "<strong>Location:</strong> " + jobListing.location + "<br>" +
-      "<strong>Type:</strong> " + jobListing.type + "<br>" +
-      "<strong>Salary:</strong> $" + jobListing.salary.toLocaleString();
-
-    jobListingElement.appendChild(titleElement);
-    jobListingElement.appendChild(detailsElement);
-
-    jobListingsContainer.appendChild(jobListingElement);
-  });
-}
-
-function filterJobListings() {
-  var location = document.getElementById("location").value;
-  var jobType = document.getElementById("job-type").value;
-  var salaryRange = document.getElementById("salary-range").value;
-
-  var filteredListings = jobListings;
-
-  if (location) {
-    filteredListings = filteredListings.filter(function(listing) {
-      return listing.location.toLowerCase().includes(location.toLowerCase());
-    });
-  }
-
-  if (jobType) {
-    filteredListings = filteredListings.filter(function(listing) {
-      return listing.type === jobType;
-    });
-  }
-
-  if (salaryRange) {
-    filteredListings = filteredListings.filter(function(listing) {
-      return listing.salary >= salaryRange;
-    });
-  }
-
-  renderJobListings(filteredListings);
-}
-
-document.getElementById("location").addEventListener("input", filterJobListings);
-document.getElementById("job-type").addEventListener("change", filterJobListings);
-document.getElementById("salary-range").addEventListener("input", filterJobListings);
-
-// Initial render
-renderJobListings(jobListings);
-</script>
-
-<h1>Messaging System</h1>
-
-  <div id="conversation-list">
-    <!-- Conversation list will be dynamically populated here -->
-  </div>
-
-  <div id="conversation">
-    <div id="message-list">
-      <!-- Message list will be dynamically populated here -->
-    </div>
-    <div id="message-input">
-      <textarea id="message-content" placeholder="Type your message..."></textarea>
-      <button id="send-button">Send</button>
-    </div>
-  </div>
-
-
+  <div class="container"></div>
 <div class="rating-form">
-  <h3>Ratings and Reviews</h3>
+  <h2>Ratings and Reviews</h2>
   <form id="ratingForm">
-    <label for="rating">Rating:</label>
-    <input type="number" id="rating" name="rating" min="1" max="5" required>
+    <label for="rate">Rate:</label>
+    <input type="number" id="rate" name="rate" min="1" max="10" required>
 
     <label for="review">Review:</label>
     <textarea id="review" name="review"></textarea>
@@ -1033,40 +481,11 @@ renderJobListings(jobListings);
 
 
 
-<!-- Advanced Search HTML -->
-<div class="advanced-search-container">
-  <h2>Advanced Search</h2>
-  <form id="advanced-search-form">
-    <div>
-      <label for="experience-level">Experience Level:</label>
-      <select id="experience-level" name="experience-level">
-        <option value="">Any</option>
-        <option value="entry">Entry</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="senior">Senior</option>
-      </select>
-    </div>
-    <div>
-      <label for="salary-range">Salary Range:</label>
-      <input type="text" id="salary-range" name="salary-range">
-    </div>
-    <div>
-      <label for="remote-work">Remote Work:</label>
-      <input type="checkbox" id="remote-work" name="remote-work">
-      <label for="remote-work">Available</label>
-    </div>
-    <!-- Add additional search criteria based on your specific requirements -->
-    <button type="submit">Search</button>
-  </form>
-</div>
-
-
-
 <!-- Blog Section HTML -->
+<div class="container"></div>
 <section class="blog-section">
   <h2><strong>Blog</strong></h2>
   <div class="blog-posts-container" id="blog-posts-container">
-    <!-- Blog posts will be dynamically populated here -->
     <h3>Title: <strong>Tips for Writing a Standout Resume</strong></h3>
     <h3>Introduction:</h3>
     <p>In today's competitive job market, having a standout resume is crucial for freelancers and job seekers. Your resume is your first impression on potential clients or employers, so it's essential to make it memorable and compelling. Here are some valuable tips to help you create a standout resume that gets noticed and increases your chances of landing your dream job or freelance gig.
@@ -1126,70 +545,6 @@ renderJobListings(jobListings);
 
       </footer>
 </section>
-
-<!--
-<script>
-  // Assuming you have blog post data stored in an array or fetched from an API
-const blogPosts = [
-  {
-    title: "Tips for Writing a Standout Resume",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt elit id enim blandit..",
-    date: "2023-05-10",
-    // Additional blog post properties
-  },
-  {
-    title: "Mastering the Art of Freelancing",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt elit id enim blandit...",
-    date: "2023-04-15",
-    // Additional blog post properties
-  },
-  // Add more blog posts here
-];
-
-// Function to display blog posts
-function displayBlogPosts(posts) {
-  const blogPostsContainer = document.getElementById("blog-posts-container");
-  blogPostsContainer.innerHTML = "";
-  
-  if (posts.length === 0) {
-    blogPostsContainer.innerHTML = "<p>No blog posts found.</p>";
-    return;
-  }
-  
-  posts.forEach((post) => {
-    const blogPostElement = document.createElement("div");
-    blogPostElement.classList.add("blog-post");
-    // Populate the blog post element with the relevant data
-    blogPostElement.innerHTML = `
-      <h3>${post.title}</h3>
-      <p class="date">${formatDate(post.date)}</p>
-      <p>${post.content}</p> -->
-      <!-- Add additional blog post properties -->
-      <!--
-    `;
-    blogPostsContainer.appendChild(blogPostElement);
-  });
-}
-
-// Function to format the date in a desired format
-function formatDate(date) {
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  return new Date(date).toLocaleDateString(undefined, options);
-}
-
-// Event listener to load and display blog posts
-window.addEventListener("DOMContentLoaded", () => {
-  // Fetch or load blog post data here (from an API, CMS, or local data)
-  const loadedBlogPosts = blogPosts; // Replace with your actual data
-  
-  // Display the blog posts
-  displayBlogPosts(loadedBlogPosts);
-});
-</script>
-
-</body>
-</html> 
--->
 
 
 <footer>
