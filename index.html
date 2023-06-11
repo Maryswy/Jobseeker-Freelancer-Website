@@ -31,23 +31,28 @@
       </nav>
   </header>
 
-  <main>
-    <!-- Hero section -->
-    <section class="jumbotron text-center">
-      <body class="body">
-      <div class="container">
-        <h1 class="display-4"><strong>Welcome to our Jobseeker/Freelancer Platform</strong></h1>
-        <p class="lead">Find the perfect job or hire talented freelancers</p>
-        <!-- a call-to-action button here -->
-        <a href="#contact" class="btn btn-primary btn-lg">Hire Now</a>
-      </div>
-    </section>
+  
 
+    <main class="content">
+      <section class="jumbotron">
+        <div class="container">
+          <h1 class="display-4"><strong>Welcome to our Jobseeker Freelancer Platform</strong></h1>
+          <p class="lead">Find the perfect job or hire talented freelancers</p>
+          <!-- a call-to-action button here -->
+          <a href="#contact" class="btn btn-primary btn-lg">Hire Now</a>
+        </div>
+      </section>
+    </main>
+    
 
+    
+    
+    
     <!-- Table of contents section -->
-    <div class="table-of-contents">
-      <img src="./images/working.JPG" alt="image of people working" width="300px" length="550px">
-      <h2 class="text-left">Table of Contents</h2>
+  <div class="table-of-contents">
+    <img src="./images/working.JPG" alt="image of people working">
+    <div>
+      <h2>Table of Contents</h2>
       <ol>
         <li>Introduction</li>
         <li>Skills</li>
@@ -62,9 +67,10 @@
         <li>Blog</li>
       </ol>
     </div>
-    
-    
-    <div class="container">
+  </div>
+
+
+    <div class="container login-container">
       <form id="loginForm">
         <h2>Login</h2>
         <div class="form-group">
@@ -81,7 +87,7 @@
       </form>
       <p>Don't have an account? <a href="Register-form.html">Register</a></p>
     </div>
-
+    
 
     <div class="container"></div>
     <section id="section1">
@@ -97,58 +103,56 @@
     </section>
 
 
-    <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="text-centre">SKILLS</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Web Development</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Bootstrap</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-        <div class="col-md-12">
-          <h3>Graphic Design</h3>
-          <ul>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Sketch</li>
-            <li>InDesign</li>
-          </ul>
-        </div>
-        <div class="col-md-12">
-          <h3>Writing</h3>
-          <ul>
-            <li>Copywriting</li>
-            <li>Content Writing</li>
-            <li>Editing</li>
-            <li>Proofreading</li>
-          </ul>
-        </div>
+  <!-- Skills Section -->
+<section id="skills">
+  <div class="container-fluid">
+    <h2 class="text-center"><strong>SKILLS</strong></h2>
+    <div class="row">
+      <div class="col-sm-6 col-md-4">
+        <h3><strong>Web Development</strong></h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <h3><strong>Graphic Design</strong></h3>
+        <ul>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Illustrator</li>
+          <li>Sketch</li>
+          <li>InDesign</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-4">
+        <h3><strong>Writing</strong></h3>
+        <ul>
+          <li>Copywriting</li>
+          <li>Content Writing</li>
+          <li>Editing</li>
+          <li>Proofreading</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
     <!-- Featured job listings section -->
-    <section class="px-5">
-      <div class="container">
-        <h2 class="text-left mb-4">FEATURED JOB LISTINGS</h2>
-        <div id="featured-job-listings">
-  
-
-          <div class="row align-items-start"></div>
-          <!--<div class="card"> 
-            <div class="card-body"> -->
-              <img src="./images/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg" alt="image of Front-end Development" width="200px" height="200px">
-              <h3><strong>Front-end Developer</strong></h3>
-              <p> <strong>Job Description:</strong> As a Front-End Developer, you will play a crucial role in creating and implementing the visual and interactive elements of websites and web applications. You will collaborate with designers and back-end developers to translate their designs and functional requirements into clean, user-friendly, and responsive user interfaces.</p><br>
+<section class="px-5">
+  <div class="container">
+    <h2 class="text-center mb-4"><strong>FEATURED JOB LISTINGS</strong></h2>
+    <div id="featured-job-listings" class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="./images/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg" alt="image of Front-end Development" width="200px" height="200px">
+          <div class="card-body">
+            <h3><strong>Front-end Developer</strong></h3>
+            <p><strong>Job Description:</strong> As a Front-End Developer, you will play a crucial role in creating and implementing the visual and interactive elements of websites and web applications. You will collaborate with designers and back-end developers to translate their designs and functional requirements into clean, user-friendly, and responsive user interfaces.</p><br>
               <p><strong>Responsibilities:</strong>
                 <ul>
                   <li>Develop high-quality, cross-browser compatible, and scalable front-end code using HTML, CSS, and JavaScript.</li>
@@ -179,17 +183,15 @@
               <p><i>Join our team as a Front-End Developer and contribute to creating visually appealing, interactive, and user-friendly web experiences that delight our users and drive our digital initiatives forward.</i></p>
               <!-- Additional details like benefits, work schedule, etc. can be added here -->
               <a href="Job-Application.html">Apply Now</a>
-            </div>
           </div>
-        
-          
-
-          <div class="container"></div>
-          <div class="row align-items-right"></div>
-          <!--<div class="card">
-          <div class="card-body"> -->
-            <img src="./images/jo-szczepanska-5aiRb5f464A-unsplash.jpg" alt="image of a production Manager" width="200px" height="200px">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="./images/jo-szczepanska-5aiRb5f464A-unsplash.jpg" alt="image of a production Manager" width="200px" height="200px">
+          <div class="card-body">
             <h3><strong>Product Manager</strong></h3>
+            <!-- Job description and other details -->
             <p><strong>Job Description:</strong> As a Product Manager, you will be responsible for driving the development and success of a product or product line. You will collaborate with cross-functional teams, including engineers, designers, marketing professionals, and stakeholders, to define and execute the product vision, strategy, and roadmap. Your goal is to deliver innovative and customer-centric products that meet market needs and drive business growth.</p>
             <p><strong>Responsibilities:</strong>
               <ul>
@@ -224,17 +226,15 @@
             <p>Salary: $X per hour</p>
             <p><i>Join our team as a Product Manager and lead the development of innovative and successful products that have a real impact on our customers and business.</i></p>
             <a href="Job-Application.html">Apply Now</a>
-            </div>
-            </div>
-
-
-            <div class="container"></div>
-          <div class="row align-items-left"></div>
-          <div class="col"></div>
-          <!--<div class="card">
-          <div class="card-body"> -->
-            <img src="./images/pexels-karolina-grabowska-7681318.jpg" alt="image of a writer" width="200px" height="200px">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="./images/pexels-karolina-grabowska-7681318.jpg" alt="image of a writer" width="200px" height="200px">
+          <div class="card-body">
             <h3><strong>Writer</strong></h3>
+            <!-- Job description and other details -->
             <p><strong>Job Description:</strong> As a Writer, you will be responsible for creating engaging and high-quality written content for various mediums and purposes. You will use your creativity, research skills, and language proficiency to craft compelling narratives, informative articles, marketing materials, or any other form of written communication as required by the organization or client.</p>
             <p><strong>Responsibilities:</strong>
               <ul>
@@ -266,17 +266,16 @@
               <p>Salary: $X per hour</p>
               <p><i>Join our team as a Writer and utilize your writing skills to create captivating and impactful content that engages readers and meets the goals of our organization or clients.</i></p>
               <a href="Job-Application.html">Apply Now</a>
-              </div>
-            </div>
-          
-            <div class="container"></div>
-          <div class="row align-items-centre"></div>
-          <div class="col"></div>
-          <!--<div class="card">
-            <div class="card-body"> -->
-              <img src="./images/pexels-michael-burrows-7147670.jpg" alt="image of a UI/UX Designer" width="200px" height="200px">
-              <h3><strong>UI/UX Designer</strong></h3>
-              <p><strong>Job Description: </strong>As a UI/UX Designer, you will be responsible for creating visually appealing and intuitive user interfaces (UI) and delivering outstanding user experiences (UX) across digital platforms. You will collaborate with cross-functional teams, including product managers, developers, and stakeholders, to understand user needs and design solutions that enhance usability, accessibility, and overall user satisfaction.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="./images/pexels-michael-burrows-7147670.jpg" alt="image of a UI/UX Designer" width="200px" height="200px">
+          <div class="card-body">
+            <h3><strong>UI/UX Designer</strong></h3>
+            <!-- Job description and other details -->
+            <p><strong>Job Description: </strong>As a UI/UX Designer, you will be responsible for creating visually appealing and intuitive user interfaces (UI) and delivering outstanding user experiences (UX) across digital platforms. You will collaborate with cross-functional teams, including product managers, developers, and stakeholders, to understand user needs and design solutions that enhance usability, accessibility, and overall user satisfaction.</p>
               <p><strong>Responsibilities:</strong>
                 <ul>
                   <li>Conduct user research and gather requirements to understand user needs, goals, and behaviors.</li>
@@ -310,19 +309,17 @@
               <p><i>Join our team as a UI/UX Designer and contribute to crafting compelling and delightful digital experiences that meet user needs and drive business objectives.</i></p>
               <!-- Additional details like benefits, work schedule, etc. can be added here -->
               <a href="Job-Application.html">Apply Now</a>
-            </div>
           </div>
-        
-          <div class="container"></div>
-          <div class="row align-items-end"></div>
-          <div class="col"></div>
-      <!--<div class="card">
-        <div class="card-body"> -->
-          <img src="./images/pexels-christina-morillo-1181675.jpg" alt="image of Software Engineering" width="200px" height="200px">
-          <h3><strong>Software Engineer</strong></h3>
-          <p><strong>Job Description:</strong> As a Software Engineer, you will be responsible for designing, developing, and maintaining high-quality software solutions. You will collaborate with cross-functional teams, including product managers, designers, and other developers, to understand requirements, translate them into technical specifications, and deliver reliable and scalable software applications.</p>
-          <p><strong>Responsibilities: </strong>
-            <ul>
+        </div>
+        <div class="col-md-12">
+          <div class="card">
+            <img src="./images/pexels-christina-morillo-1181675.jpg" alt="image of Software Engineering" width="200px" height="200px">
+            <div class="card-body">
+              <h3><strong>Software Engineer</strong></h3>
+              <!-- Job description and other details -->
+              <p><strong>Job Description:</strong> As a Software Engineer, you will be responsible for designing, developing, and maintaining high-quality software solutions. You will collaborate with cross-functional teams, including product managers, designers, and other developers, to understand requirements, translate them into technical specifications, and deliver reliable and scalable software applications.</p>
+             <p><strong>Responsibilities: </strong>
+             <ul>
               <li>Participate in the entire software development life cycle, including requirements gathering, design, implementation, testing, deployment, and maintenance.</li>
               <li>Collaborate with product managers and stakeholders to understand user needs and translate them into technical requirements and system design.</li>
               <li>Write clean, efficient, and well-documented code in one or more programming languages (such as Python, Java, C++, or JavaScript) according to best practices and coding standards.</li>
@@ -333,8 +330,8 @@
               <li>Work in an Agile development environment, actively participating in sprint planning, stand-up meetings, and other Agile ceremonies.</li>
               <li>Document software designs, technical specifications, and development processes to facilitate knowledge sharing and future maintenance.</li>
             </ul>
-          </p>
-          <p><strong>Requirements:</strong>
+            </p>
+            <p><strong>Requirements:</strong>
             <ul>
               <li>Bachelor's degree in Computer Science, Software Engineering, or a related field (or equivalent work experience).</li>
               <li>Strong programming skills in one or more programming languages commonly used in software development.</li>
@@ -351,56 +348,60 @@
             <p>Salary: $X per hour</p>
             <p><i>Join our team as a Software Engineer and contribute to building innovative software solutions that meet user needs and drive technological advancement.</i></p>
             <a href="Job-Application.html">Apply Now</a>
-          </div>
-        </div>
-    </section>
-
-    <!-- User Stories section -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">USER STORIES</h2>
-        
-
-        <div class="card">
-          <div class="card-body"></div>
-          <h3><strong>As a jobseeker</strong></h3>
-          <p>I want to be able to create a profile and showcase my skills and experience, so that employers can find me and contact me for job opportunities.</p>
-          <p><strong>Acceptance criteria:</strong>
-          <ul>
-            <li>I can fill out a form to create a profile with details such as my name, contact information, work experience, education, and skills. </li>
-            <li>I can upload a profile picture and a resume or portfolio to showcase my work.</li>
-            <li>My profile is searchable by employers and can be filtered by criteria such as skills, location, and availability. </li>
-            <li>I receive email notifications when an employer contacts me through the website. </li>
-          </ul></p>
       </div>
+    </div>
+</section>
 
-      <div class="card">
-        <div class="card-body"></div>
+
+<!-- User Stories section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">USER STORIES</h2>
+
+    <div class="card">
+      <div class="card-body">
+        <h3><strong>As a jobseeker</strong></h3>
+        <p>I want to be able to create a profile and showcase my skills and experience, so that employers can find me and contact me for job opportunities.</p>
+        <p><strong>Acceptance criteria:</strong></p>
+        <ul>
+          <li>I can fill out a form to create a profile with details such as my name, contact information, work experience, education, and skills. </li>
+          <li>I can upload a profile picture and a resume or portfolio to showcase my work.</li>
+          <li>My profile is searchable by employers and can be filtered by criteria such as skills, location, and availability. </li>
+          <li>I receive email notifications when an employer contacts me through the website. </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
         <h3><strong>As an Employer</strong></h3>
         <p>I want to be able to post job openings and find qualified freelancers to hire, so that I can grow my business and complete projects on time. </p>
-        <p><strong>Acceptance criteria:</strong>
-          <ul>
-            <li>I can fill out a form to create a job posting with details such as the job title, description, required skills, budget, and deadline. </li>
-            <li>I can browse profiles of freelancers who have the skills I need and invite them to apply for the job. </li>
-            <li>I can receive and review proposals from freelancers who apply and choose one or more to hire. </li>
-            <li>I can communicate with freelancers through the website and track the progress of the job. </li>
-          </ul></p>
-          </div>
+        <p><strong>Acceptance criteria:</strong></p>
+        <ul>
+          <li>I can fill out a form to create a job posting with details such as the job title, description, required skills, budget, and deadline. </li>
+          <li>I can browse profiles of freelancers who have the skills I need and invite them to apply for the job. </li>
+          <li>I can receive and review proposals from freelancers who apply and choose one or more to hire. </li>
+          <li>I can communicate with freelancers through the website and track the progress of the job. </li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="card">
-            <div class="card-body"></div>
-            <h3><strong>As a Freelancer</strong></h3>
-            <p>I want to be able to browse job listings and submit proposals for jobs that match my skills and interests, so that I can find new projects to work on and earn money. </p>
-            <p><strong>Acceptance criteria:</strong>
-              <ul>
-                <li>I can browse a list of job openings on the website, filtered by criteria such as skills, location, and pay rate. </li>
-                <li>I can view the details of a job posting and decide whether to submit a proposal. </li>
-                <li>I can fill out a form to submit a proposal with details such as my proposed rate, estimated time to completion, and a cover letter. </li>
-                <li>I can track the status of my proposals and receive notifications if an employer contacts me or hires me for a job. </li>
-              </ul></p>
-              </div>
-    </section>
-  </main>
+    <div class="card">
+      <div class="card-body">
+        <h3><strong>As a Freelancer</strong></h3>
+        <p>I want to be able to browse job listings and submit proposals for jobs that match my skills and interests, so that I can find new projects to work on and earn money. </p>
+        <p><strong>Acceptance criteria:</strong></p>
+        <ul>
+          <li>I can browse a list of job openings on the website, filtered by criteria such as skills, location, and pay rate. </li>
+          <li>I can view the details of a job posting and decide whether to submit a proposal. </li>
+          <li>I can fill out a form to submit a proposal with details such as my proposed rate, estimated time to completion, and a cover letter. </li>
+          <li>I can track the status of my proposals and receive notifications if an employer contacts me or hires me for a job. </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
 
 
 
@@ -408,17 +409,13 @@
 
 
 
-  <div class="container"></div>
+<div class="container">
   <div class="message-container">
     <h2>Messaging System</h2>
     <div class="message">
-      <span class="sender"></span>
-      <span class="timestamp"></span>
       <p>Hello, how can I assist you?</p>
     </div>
     <div class="message">
-      <span class="sender"></span>
-      <span class="timestamp"></span>
       <p>Please write your question below</p>
     </div>
     <!-- Add more messages dynamically using JavaScript -->
@@ -428,6 +425,8 @@
     <textarea id="message-input" placeholder="Type your message here..."></textarea>
     <button onclick="sendMessage()">Send</button>
   </div>
+</div>
+
 
   <script>
     // JavaScript code for sending messages
@@ -464,21 +463,22 @@
   </script>
 
 
+<section>
+<div class="container">
+  <div class="rating-form">
+    <h2>Ratings and Reviews</h2>
+    <form id="ratingForm">
+      <label for="rate">Rate:</label>
+      <input type="number" id="rate" name="rate" min="1" max="10" required>
 
-  <div class="container"></div>
-<div class="rating-form">
-  <h2>Ratings and Reviews</h2>
-  <form id="ratingForm">
-    <label for="rate">Rate:</label>
-    <input type="number" id="rate" name="rate" min="1" max="10" required>
+      <label for="review">Review:</label>
+      <textarea id="review" name="review"></textarea>
 
-    <label for="review">Review:</label>
-    <textarea id="review" name="review"></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 </div>
-
+</section>
 
 
 <!-- Blog Section HTML -->
@@ -489,6 +489,7 @@
     <h3>Title: <strong>Tips for Writing a Standout Resume</strong></h3>
     <h3>Introduction:</h3>
     <p>In today's competitive job market, having a standout resume is crucial for freelancers and job seekers. Your resume is your first impression on potential clients or employers, so it's essential to make it memorable and compelling. Here are some valuable tips to help you create a standout resume that gets noticed and increases your chances of landing your dream job or freelance gig.
+      <h4>The below Tips will help:-</h4>
       <ol>
         <li>Tailor your resume for each opportunity:
           One of the most important tips for writing a standout resume is to customize it for each job or freelance project you apply for. Study the job description or project requirements carefully and highlight the skills and experiences that align with the position. This shows employers that you understand their needs and are a perfect fit for the role.</li>
@@ -518,6 +519,7 @@
     <h3>Title: <strong>Mastering the Art of Freelancing: A Guide for Jobseekers</strong></h3>
     <h3>Introduction:</h3>
     <p>Freelancing offers a world of opportunities for jobseekers looking for flexibility, autonomy, and the chance to work on diverse projects. However, freelancing also comes with its unique challenges. Mastering the art of freelancing requires a combination of skills, strategies, and mindset. In this blog post, we'll explore essential tips and insights to help you thrive as a freelancer and build a successful career in the freelance industry.
+      <h4>The below Tips will help:-</h4>
       <ol>
         <li>Define your niche and target audience:
           To excel as a freelancer, it's crucial to identify your niche and target audience. Determine the specific skills, expertise, and services you can offer that set you apart from others. This specialization allows you to position yourself as an expert in your field, making it easier to attract clients who value your unique abilities.</li>
@@ -545,6 +547,8 @@
 
       </footer>
 </section>
+</body>
+</html>
 
 
 <footer>
@@ -553,7 +557,3 @@
     <p>&copy; 2023 Jobseeker Freelancer Website. All rights reserved.</p>
   </div>
 </footer> 
-  
-
-
-
