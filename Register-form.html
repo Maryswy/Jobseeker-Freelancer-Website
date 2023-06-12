@@ -12,7 +12,7 @@
   <title>Registration form</title>
 </head>
 
-
+<body>
 <div class="container">
   <form id="registerForm">
     <h2>Registration</h2>
@@ -75,46 +75,12 @@
   <p>Already have an account? <a href="login.html">Login</a></p>
 </div>
 
-
-<script>
-  // Function to handle form submission
-function handleSubmit(event, url) {
-event.preventDefault(); // Prevent the default form submission
-
-// Get the form data
-const form = event.target;
-const formData = new FormData(form);
-
-// Send a POST request to the specified URL
-fetch(url, {
- method: 'POST',
- body: formData
-})
- .then(response => {
-   if (response.ok) {
-     // Success response
-     // Redirect the user to the logged-in area or show a success message
-     window.location.href = '/logged-in.html'; // Replace with the appropriate URL
-   } else {
-     // Error response
-     // Show an appropriate error message
-     console.error('Error:', response.status);
-   }
- })
- .catch(error => {
-   console.error('Error:', error);
- });
-}
-
-// Login form submission
-const loginForm = document.getElementById('loginForm');
-loginForm.addEventListener('submit', event => {
-handleSubmit(event, '/login');
-});
-
-// Registration form submission
-const registerForm = document.getElementById('registerForm');
-registerForm.addEventListener('submit', event => {
-handleSubmit(event, '/register');
-});
- </script> 
+  
+<div>
+  <p>Go back to the Home page  <a href="index.html">Back to Home</a></p>
+</div>
+</body>
+</html>
+<footer>
+  <p>&copy; 2023 Jobseeker Freelancer Website. All rights reserved.</p>
+</footer>
