@@ -1,0 +1,41 @@
+Project Name: Freelancer Jobseeker Website
+
+Introduction
+This project is a freelancer/jobseeker website that provides a platform for individuals to showcase their skills and find job opportunities. It allows freelancers/jobseekers to create profiles, upload portfolios, and connect with potential clients/employers. The website is built using HTML, CSS, JavaScript, the Bootstrap framework, and jQuery libraries.
+
+Deployed Site
+You can access the deployed site marys24.tech.
+
+Final Project Blog Article
+Read the final project blog article here.
+
+Author(s) LinkedIn
+Connect with the author(s) on LinkedIn:
+
+Author Name
+
+Installation
+To run the freelancer/jobseeker website locally, follow these steps:
+
+Clone the repository: git clone https://github.com/your-username/your-repo.git
+Navigate to the project directory: cd your-repo
+Open the index.html file in a web browser.
+Usage
+Upon opening the website, users can perform the following actions:
+
+Create a new profile: Users can register and create their freelancer/jobseeker profile by providing relevant information such as personal details, skills, experience, and portfolio.
+Browse job listings: Users can view available job listings posted by clients/employers.
+Apply for jobs: Users can apply for jobs by submitting their profiles and portfolios to potential clients/employers.
+Connect with clients/employers: Users can communicate with clients/employers through the messaging system provided on the platform.
+Contributing
+We welcome contributions to enhance the freelancer/jobseeker website. To contribute, please follow these steps:
+
+Fork the repository.
+Create a new branch: git checkout -b feature/your-feature
+Make your changes and commit them: git commit -am 'Add your feature'
+Push to the branch: git push origin feature/your-feature
+Create a new Pull Request.
+
+
+Licensing
+This project is licensed under the MIT License.
